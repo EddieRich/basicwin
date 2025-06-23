@@ -29,12 +29,9 @@ void main(int argc, char **argv)
 {
 	Window win;
 	unsigned int width, height;
-	/* Window size */
 	int x, y;
-	/* Window position */
-	unsigned int border_width = 4; /* Four pixels */
+	unsigned int border_width = 4;
 	unsigned int display_width, display_height;
-	unsigned int icon_width, icon_height;
 	char *window_name = "Basic Window Program";
 	char *icon_name = "basicwin";
 	Pixmap icon_pixmap;
@@ -49,8 +46,7 @@ void main(int argc, char **argv)
 	XFontStruct font_info;
 	char *display_name = NULL;
 	int window_size = 0;
-	/* BIG_ENOUGH or TOO_SMALL to
-	 * display contents */
+
 	progname = argv[0];
 	if (!(size_hints = XAllocSizeHints()))
 	{
